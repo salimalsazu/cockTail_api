@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="cupcake" lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CockTail Db</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- flowbite CDN  -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script> -->
 </head>
 
 <body>
@@ -24,10 +28,31 @@
 
         <section>
             <div id="cockTail-container" class="card  bg-base-100 shadow-xl grid grid-cols-3">
+            </div>
+        </section>
 
+        <section class="flex justify-center items-center mt-48 w-1/2 mx-auto">
+            <!-- <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div id="loader"
+                    class="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                    style="width: 0%"></div>
+            </div> -->
+
+            <div id="loader"
+                class="bg-blue-600 text-xs  font-medium text-blue-100 text-center p-0.5 leading-none rounded-full "
+                style="width: 0%">
+                <progress class="progress w-full"></progress>
             </div>
 
+        </section>
 
+        <!-- Modal section  -->
+        <section>
+            <!-- Put this part before tag -->
+            <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+            <div id="modal-display" class="modal">
+
+            </div>
         </section>
     </main>
 
